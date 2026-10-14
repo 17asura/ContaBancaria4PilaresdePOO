@@ -27,4 +27,23 @@ public class ContaPoupanca : ContaBancaria
         }
         
     }
+
+    public override void Depositar(int pinTest, double valor)
+    {
+        if (Pin == pinTest)
+        {
+            if (valor > 0)
+            {
+                Saldo += valor;
+            }
+            else
+            {
+                Console.WriteLine("Valor a depositar insuficiente!");
+            }
+        }
+        else if (Pin != pinTest)
+        {
+            Console.WriteLine("Pin Errado!");
+        }
+    }
 }

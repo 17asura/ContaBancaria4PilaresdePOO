@@ -27,7 +27,7 @@ public class ContaCorrente : ContaBancaria
         }
         
     }
-    public override void Depositar(int pinTest, double valor)
+    public override void Deposit(int pinTest, double valor)
     {
         if (Pin == pinTest)
         {
@@ -41,6 +41,26 @@ public class ContaCorrente : ContaBancaria
             }
         }
         else if (Pin != pinTest)
+        {
+            Console.WriteLine("Pin Errado!");
+        }
+    }
+    
+    public override void TakeTheMoney(int pinTest, double value)
+    {
+        if (Pin == pinTest)
+        {
+            if (value > 0)
+            {
+                    Saldo -= value;
+                    Console.WriteLine($"Saldo Retirado Com Sucesso!\n Saldo Atual: {Saldo}");
+            }
+            else
+            {
+                Console.WriteLine("Valor a depositar tem de ser maior que zero!");
+            }
+        }
+        else
         {
             Console.WriteLine("Pin Errado!");
         }

@@ -16,7 +16,7 @@ public abstract class ContaBancaria
     }
 
     public abstract void ObterDados();
-    public abstract void Depositar(int pinTest, double valor);
+    public abstract void Deposit(int pinTest, double value);
     public abstract void ShowTheMoney( int pinTest );
-
+    public abstract void TakeTheMoney(int pinTest, double value);
 }

@@ -2,7 +2,7 @@
 
 using ContaBancaria4PilaresdePOO;
 
-List<ContaBancaria> listaDeContas = new List<ContaBancaria>();
+List<ContaBancaria> accountList = new List<ContaBancaria>();
     // 1. Declarar a variável FORA do loop para não a perdermos
     ContaBancaria novaContaBancaria = null;
 
@@ -19,52 +19,64 @@ List<ContaBancaria> listaDeContas = new List<ContaBancaria>();
         Console.WriteLine("[6] Exit");
         
         int choice = int.Parse(Console.ReadLine());
-
         if (choice == 1)
         {
-            Console.WriteLine("Criando uma conta, qual o tipo?");
-            Console.WriteLine("[1] - Poupança");
-            Console.WriteLine("[2] - Conta Corrente");
-            int tipo = int.Parse(Console.ReadLine());
+            Console.WriteLine("Creating an account, choose a type: ");
+            Console.WriteLine("[1] - Savings Account");
+            Console.WriteLine("[2] - Checking Account");
+            int type = int.Parse(Console.ReadLine());
             
-            Console.WriteLine("Criando uma conta, qual o numero?");
+            Console.WriteLine("ID: ");
             int num = int.Parse(Console.ReadLine());
             
-            Console.WriteLine("Criando uma conta, qual o nome do Titular?");
-            string nome = Console.ReadLine();
+            Console.WriteLine("Full Name: ");
+            string name = Console.ReadLine();
             
-            Console.WriteLine("Criando uma conta, qual o saldo?");
-            int saldo = int.Parse(Console.ReadLine());
+            Console.WriteLine("First Deposit: ");
+            int balance = int.Parse(Console.ReadLine());
             
-            Console.WriteLine("Criando uma conta, qual o pin?");
+            Console.WriteLine("Pin Number:");
             int pin = int.Parse(Console.ReadLine());
             
-            // 2. Preencher a variável que criámos lá fora
-            if (tipo == 1)
+            if (type == 1)
             {
-                novaContaBancaria = new ContaPoupanca(num, nome, saldo, "Poupança", pin);
-                Console.WriteLine("Conta Poupança criada com sucesso!");
+                string choosedtype = "Savings Account";
+                novaContaBancaria = new ContaPoupanca(num, choosedtype, name, balance, pin);
+                Console.WriteLine("Savings Account Successfully Created!");
             }
-            else if (tipo == 2)
+            else if (type == 2)
             {
-                novaContaBancaria = new ContaCorrente(num, nome, saldo, "Corrente", pin);
-                Console.WriteLine("Conta Corrente criada com sucesso!");
+                string choosedtype = "Checking Account";
+                novaContaBancaria = new ContaCorrente(num, choosedtype, name, balance, pin);
+                Console.WriteLine("Checking Account Successfully Created!");
             }
             else
             {
-                Console.WriteLine("Tipo de conta inválido!");
+                Console.WriteLine("Account Type Invalid!");
             }
         }
         else if (choice == 2)
         {
-            // 3. Verificar se a conta já foi criada antes de tentar ver os dados
-            if (novaContaBancaria != null)
+            Console.WriteLine("Account Number: ");
+            int numProcurado = int.Parse(Console.ReadLine());
+            ContaBancaria AccountFound = null;
+            foreach (ContaBancaria Account in accountList)
             {
-                novaContaBancaria.ObterDados();
+                if (Account.Number == numProcurado)
+                {
+                    AccountFound = Account;
+                    break;
+                }
+            }
+            
+            if (AccountFound != null)
+            {
+                Console.WriteLine("\n--- Account Found ---");
+                AccountFound.GetAccData();
             }
             else
             {
-                Console.WriteLine("Por favor, crie uma conta primeiro (Opção 1).");
+                Console.WriteLine("\nError: No Account Found.");
             }
         }
         else if (choice == 3)
@@ -83,6 +95,6 @@ List<ContaBancaria> listaDeContas = new List<ContaBancaria>();
         else if (choice == 6)
         {
             Console.WriteLine("A sair do sistema...");
-            break; // Sai do loop infinito
+            break;
         }
     }

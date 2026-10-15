@@ -6,7 +6,7 @@ public class ContaPoupanca : ContaBancaria
 
     public ContaPoupanca(int number, string acctype, string ownername, double saldo, int pin) : base(number, acctype,
         ownername, saldo, pin){}
-
+    //Método Abstrato Levantamento Com Condições Privadas
     public override void TakeTheMoney(int pinTest, double value)
     {
         if (Pin == pinTest)
@@ -16,21 +16,21 @@ public class ContaPoupanca : ContaBancaria
                 if (Saldo - value > 0)
                 {
                     Saldo -= value;
-                    Console.WriteLine($"Saldo Retirado Com Sucesso!\n Saldo Atual: {Saldo}");
+                    Console.WriteLine($"Successful Withdrawal!\n New Balance: {Saldo}");
                 }
                 else
                 {
-                    Console.WriteLine("Valor a depositar ultrapassa o montante na conta!");
+                    Console.WriteLine("Withdrawal Value Exceeds Limit!");
                 }
             }
             else
             {
-                Console.WriteLine("Valor a depositar tem de ser maior que zero!");
+                Console.WriteLine("Withdrawal Value Has To Be More Than Zero!");
             }
         }
         else
         {
-            Console.WriteLine("Pin Errado!");
+            Console.WriteLine("Wrong Credentials!");
         }
     }
 }

@@ -13,7 +13,13 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05bf0e61-78d7-4a7d-857a-98252d2fab7d" name="Changes" comment="" />
+    <list default="true" id="05bf0e61-78d7-4a7d-857a-98252d2fab7d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContaBancaria4PilaresdePOO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ContaBancaria4PilaresdePOO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaBancaria.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaBancaria.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaCorrente.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaCorrente.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaPoupanca.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaPoupanca.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,8 +39,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/17asura/ContaBancaria4PilaresdePOO&quot;,
-    &quot;accountId&quot;: &quot;fe99191d-9bf5-4960-bb32-258930f1990f&quot;
+    &quot;url&quot;: &quot;https://github.com/17asura/ContaBancaria4PilaresdePOO.git&quot;,
+    &quot;accountId&quot;: &quot;77c183ae-fd76-4233-8e9b-0ecb11347f17&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -126,9 +132,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First launch" />
     <MESSAGE value="Launched" />
-    <MESSAGE value="Alterações no main e primeira implementação das funções depósito e levantamento" />
-    <MESSAGE value="Implementação de procura e alteração de estrutura" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementação de procura e alteração de estrutura" />
+    <option name="LAST_COMMIT_MESSAGE" value="Launched" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -8,7 +8,7 @@ public abstract class ContaBancaria
     
     protected double Saldo;
     protected int Pin;
-
+    //Objeto
     protected ContaBancaria(int number, string acctype , string ownername, double saldo, int pin)
     {
         Number = number;
@@ -17,14 +17,21 @@ public abstract class ContaBancaria
         Saldo = saldo;
         Pin = pin;
     }
-
-    public void GetAccData()
+    // Dados da Conta
+    public void GetAccData(int pinTest)
     {
-        Console.WriteLine($"Número da Conta: {Number}");
-        Console.WriteLine($"Nome do Dono: {Ownername}");
-        Console.WriteLine($"Tipo: {AccType}");
+        if (Pin == pinTest)
+        {
+            Console.WriteLine($"Account Number: {Number}");
+            Console.WriteLine($"Owner Name: {Ownername}");
+            Console.WriteLine($"Type: {AccType}");
+        }
+        else
+        {
+            Console.WriteLine("Pin Errado!");
+        }
     }
-    
+    //Método Depositar
     public void Deposit(int pinTest, double value)
     {
         if (Pin == pinTest)
@@ -43,11 +50,12 @@ public abstract class ContaBancaria
             Console.WriteLine("Pin Errado!");
         }
     }
+    //Método Mostrar Saldo
     public void ShowTheMoney(int pinTest)
     {
         if (Pin == pinTest)
         {
-            GetAccData();
+            GetAccData(pinTest);
             Console.WriteLine($"{Saldo}");
         }
         else
@@ -56,5 +64,6 @@ public abstract class ContaBancaria
         }
         
     }
+    //Método Abstrato Levantamento
     public abstract void TakeTheMoney(int pinTest, double value);
 }

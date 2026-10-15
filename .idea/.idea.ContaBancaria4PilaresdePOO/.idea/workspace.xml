@@ -13,13 +13,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05bf0e61-78d7-4a7d-857a-98252d2fab7d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContaBancaria4PilaresdePOO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ContaBancaria4PilaresdePOO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaBancaria.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaBancaria.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaCorrente.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaCorrente.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaPoupanca.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/ContaPoupanca.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContaBancaria4PilaresdePOO/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="05bf0e61-78d7-4a7d-857a-98252d2fab7d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +127,8 @@
     <MESSAGE value="First launch" />
     <MESSAGE value="Launched" />
     <MESSAGE value="Alterações no main e primeira implementação das funções depósito e levantamento" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alterações no main e primeira implementação das funções depósito e levantamento" />
+    <MESSAGE value="Implementação de procura e alteração de estrutura" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementação de procura e alteração de estrutura" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
